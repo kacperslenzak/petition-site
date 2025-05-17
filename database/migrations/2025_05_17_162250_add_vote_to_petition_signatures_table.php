@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('petition_signatures', function (Blueprint $table) {
-            $table->boolean('vote');
+            $table->boolean('vote')->default(false);
         });
     }
 
